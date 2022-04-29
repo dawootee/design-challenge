@@ -1,0 +1,27 @@
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #20695B;
+    color: #fff;
+    border: solid 1px #184e43;
+}
+
+.btn-secondary {
+    background-color: #A6BB36;
+    color: #fff;
+    border: solid 1px #8d9e2e;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}

@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer style={{ backgroundColor: '#F9EBEA' }}>
+    <footer className="bg-secondary text-white">
       <Image
         width={50}
         height={50}
@@ -16,7 +16,7 @@ export const Footer = () => {
         people and their beliefs.
       </p>
 
-      <p>
+      <p className="mb-0">
         Email us at{' '}
         <a href="mailto:hollowverse@hollowverse.com">
           hollowverse@hollowverse.com

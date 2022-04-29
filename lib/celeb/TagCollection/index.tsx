@@ -5,21 +5,23 @@ export const TagCollection = () => {
   const tags = useCelebContext().celeb.tags!;
 
   return (
-    <div style={{ backgroundColor: '#E8F8F5' }}>
-      <div>
+    <section className="tag-collection">
+      <ul className="tag-list">
         {tags.regular.map((t) => (
-          <div key={t.tag.name}>{t.tag.name}</div>
+          <li key={t.tag.name}>{t.tag.name}</li>
         ))}
-      </div>
+      </ul>
 
       {tags.lowConfidence.length > 0 && (
-        <div>
-          <p>Maybe</p>
-          {tags.lowConfidence.map((t) => (
-            <div key={t.tag.name}>{t.tag.name}</div>
-          ))}
-        </div>
+        <>
+          <h3>Maybe</h3>
+          <ul className="tag-list">
+            {tags.lowConfidence.map((t) => (
+              <li key={t.tag.name}>{t.tag.name}</li>
+            ))}
+          </ul>
+        </>
       )}
-    </div>
+    </section>
   );
 };

@@ -4,7 +4,7 @@ import React from 'react';
 
 export const AppBar = () => {
   return (
-    <nav style={{ backgroundColor: '#F9EBEA' }}>
+    <nav className="bg-primary nav">
       <section>
         <div>
           <Link passHref href="/">
@@ -23,7 +23,7 @@ export const AppBar = () => {
         <div>
           {/* Search input */}
           <div>
-            <input placeholder="Search for a celebrity" type="search" />
+            <input className="search-input" placeholder="Search for a celebrity" type="search" />
           </div>
         </div>
       </section>

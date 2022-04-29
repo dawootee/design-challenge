@@ -1,0 +1,23 @@
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.bg-primary {
+    background-color: #184e43;
+}
+
+.bg-secondary {
+    background-color: #8d9e2e;
+}
+
+.text-white {
+    color: #fff;
+}

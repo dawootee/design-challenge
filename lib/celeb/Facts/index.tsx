@@ -7,7 +7,7 @@ export const Facts = () => {
   const { groups, topics } = context.celeb.facts!;
 
   return (
-    <div>
+    <section>
       {topics.map((topic, i) => {
         const factGroup = groups[topic];
 
@@ -17,7 +17,6 @@ export const Facts = () => {
               return (
                 <div
                   key={`${topic}-${i}-${innerI}`}
-                  style={{ backgroundColor: '#F4ECF7' }}
                 >
                   <Fact value={fact} />
                 </div>
@@ -26,6 +25,6 @@ export const Facts = () => {
           </div>
         );
       })}
-    </div>
+    </section>
   );
 };

@@ -9,11 +9,12 @@ export const TopSection = () => {
   const picture = context.celeb.picture || context.placeholderImage;
 
   return (
-    <div style={{ backgroundColor: '#FEF9E7' }}>
+    <div>
       <section>
         <header>
-          <div>
+          <div className="top-section-image-container">
             <Image
+              className="top-section-image"
               blurDataURL={picture.metadata.lqip}
               placeholder="blur"
               src={sanityImage(picture).width(200).height(250).url()}
@@ -24,7 +25,7 @@ export const TopSection = () => {
             />
           </div>
 
-          <h1>
+          <h1 className="text-center mb-0">
             <span>Religion, politics, and ideas of</span>
             <br /> <span>{context.celeb.name}</span>
           </h1>

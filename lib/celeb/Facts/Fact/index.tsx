@@ -9,8 +9,8 @@ export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
   } = useCelebContext();
 
   return (
-    <div>
-      <div>
+    <div className="fact">
+      <div className="text-right">
         <p>{value.date}</p>
       </div>
 
@@ -33,7 +33,7 @@ export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
           ))}
       </div>
 
-      <div>
+      <div className="fact-tags">
         {value.tags.map((t) => {
           return (
             <p key={t.tag.name}>
@@ -44,9 +44,13 @@ export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
         })}
       </div>
 
-      <div>
-        <Link href={value.source}>Source</Link>
-        <Link href={value.forumLink}>Forum link</Link>
+      <div className="btn-group">
+        <Link href={value.source}>
+          <button className="btn btn-primary">Source</button>
+        </Link>
+        <Link href={value.forumLink}>
+          <button className="btn btn-secondary">Forum link</button>
+        </Link>
       </div>
     </div>
   );

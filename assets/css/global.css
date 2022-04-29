@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Radio+Canada);
+@import '_utilities.css';
+@import 'components/buttons.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+a:link, a:visited {
+    color: #20695B;
+}
+
+a:hover, a:focus {
+    color: #184e43;
+}
+
+blockquote {
+    border-left: solid 5px #555;
+    margin: 0;
+    padding-left: 1rem;
+    text-align: justify;
+}
+
+section, footer {
+    padding: 20px;
+}
+
+footer a:link {
+    color: #eee;
+}
+
+.nav .search-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: solid 1px #999;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: inherit;
+}
+
+.top-section-image-container {
+    text-align: center;
+}
+
+.top-section-image {
+    border-radius: 10px;
+}
+
+.tag-list {
+    margin: 0;
+    list-style-image: url(../images/arrow-right.png);
+}
+
+.tag-list li {
+    padding: 10px;
+}
+
+.fact {
+    margin-bottom: 75px;
+}
+
+.fact-tags {
+    color: #777;
+}
